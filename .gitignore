@@ -102,3 +102,7 @@ dist
 
 # TernJS port file
 .tern-port
+css/practice-styles.css
+css/styles-old.css
+practice-portfolio.html
+practice.html
