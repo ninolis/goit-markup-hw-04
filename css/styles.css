@@ -171,6 +171,8 @@ body {
       rgba(47, 48, 58, 0.4)
     ),
     url(../images/hero-bg-progressive.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
   border: 1px solid #000000;
 }
 
