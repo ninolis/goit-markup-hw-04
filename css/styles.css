@@ -165,6 +165,7 @@ body {
   padding-top: 200px;
   padding-bottom: 200px;
   background-color: #2f303a;
+  background-image: url(../images/hero-bg-progressive.jpg);
 }
 
 .hero-title {
