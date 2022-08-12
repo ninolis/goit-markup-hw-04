@@ -2,10 +2,17 @@
   --primary-text-color: #212121;
   --secondary-grey-color: #757575;
   --secondary-color: #2196f3;
-  --primary-white-color: #ffffff;
+  --primary-bg-color: #ffffff;
   --primary-black-color: #000000;
   --temp-bg-color: #7ddd85;
   --second-bg-color: #f5f4fa; /* var(second-bg-color) */
+  --socials-color: #afb1b8;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  color: var(--primary-text-color);
+  background-color: var(--primary-bg-color);
 }
 
 p,
@@ -32,10 +39,8 @@ img {
   display: block;
 }
 
-body {
-  font-family: Roboto, sans-serif;
-  color: var(--primary-text-color);
-  background-color: var(--primary-white-color);
+.link {
+  text-decoration: none;
 }
 
 .container {
@@ -69,7 +74,7 @@ body {
   padding-top: 24px;
   padding-bottom: 24px;
   display: flex;
-  background-color: var(--primary-white-color);
+  background-color: var(--primary-bg-color);
   /* background-color: pink; temp color */
   border-bottom: 1px solid #ececec;
 }
@@ -106,7 +111,7 @@ body {
 }
 
 .logo-span-bottom {
-  color: var(--primary-white-color);
+  color: var(--primary-bg-color);
 }
 
 .navigation-list {
@@ -126,7 +131,6 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
-  text-decoration: none;
 }
 
 .navigation-link:hover,
@@ -151,12 +155,16 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--secondary-grey-color);
-  text-decoration: none;
 }
 
 .contact-link:hover,
 .contact-link:focus {
   color: var(--secondary-color);
+}
+
+.icon {
+  margin-right: 10px;
+  fill: currentColor;
 }
 
 /* ------------ Hero ------------- */
@@ -184,7 +192,7 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--primary-white-color);
+  color: var(--primary-bg-color);
 }
 
 .hero-button {
@@ -199,7 +207,7 @@ body {
   line-height: 1.88;
   text-align: center;
   letter-spacing: 0.06em;
-  color: var(--primary-white-color);
+  color: var(--primary-bg-color);
   background-color: var(--secondary-color);
   border: 0;
   border-radius: 4px;
@@ -207,7 +215,7 @@ body {
 
 .hero-button:hover,
 .hero-button:focus {
-  color: var(--primary-white-color);
+  color: var(--primary-bg-color);
   background-color: #188ce8;
 }
 
@@ -224,8 +232,8 @@ body {
 
 .advantage-list {
   display: flex;
-  margin-top: 0;
-  margin-bottom: 0;
+  /* margin-top: 0; */
+  /* margin-bottom: 0; */
   /* align-items: center; */
   /* margin-left: auto; */
 }
@@ -241,6 +249,15 @@ body {
 .advantage-item:not(:last-child) {
   margin-right: 30px;
   margin-left: 0;
+}
+
+.advantage-icon-wrap {
+  padding: 25px 100px;
+  margin-bottom: 30px;
+  background-color: var(--second-bg-color);
+}
+
+.advantage-icon {
 }
 
 .advantage-title {
@@ -319,8 +336,8 @@ body {
   display: flex;
   flex-direction: column;
   width: 270px;
-  height: 368px;
-  background-color: var(--primary-white-color);
+  height: 428px;
+  background-color: var(--primary-bg-color);
   opacity: 1;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -353,6 +370,41 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--secondary-grey-color);
+  margin-bottom: 16px;
+}
+
+.team-wrapper .socials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.socials-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.socials-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 44px;
+  height: 44px;
+
+  background-color: #ffffff;
+  border-radius: 50%;
+
+  color: var(--socials-color);
+}
+
+.socials-icon {
+  fill: currentColor;
+}
+
+.socials-link:hover,
+.socials-link:focus {
+  background-color: var(--secondary-color);
+  color: var(--primary-bg-color);
 }
 
 /* --------- Lower-block (Footer) ---------- */
@@ -377,8 +429,7 @@ body {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: var(--primary-white-color);
-  text-decoration: none;
+  color: var(--primary-bg-color);
 }
 
 .place-link:hover,
@@ -393,12 +444,15 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
-  text-decoration: none;
 }
 
 .direction-link:hover,
 .direction-link:focus {
   color: var(--secondary-color);
+}
+
+.socials-icon-footer {
+  fill: var(--primary-bg-color);
 }
 
 /* -------- Filters (Portfolio) --------- */
@@ -439,7 +493,7 @@ body {
 
 .filter-button:hover,
 .filter-button:focus {
-  color: var(--primary-white-color);
+  color: var(--primary-bg-color);
   background-color: var(--secondary-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
