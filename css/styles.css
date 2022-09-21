@@ -487,6 +487,8 @@ img {
 }
 
 .footer-logo {
+  display: block;
+  margin-right: 0;
   margin-bottom: 20px;
 }
 
@@ -504,6 +506,10 @@ img {
   font-style: normal;
 }
 
+.direction-item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
 .place-link {
   font-size: 14px;
   line-height: 1.71;
@@ -517,8 +523,6 @@ img {
 }
 
 .direction-link {
-  margin-top: 9px;
-  margin-bottom: 0;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -537,8 +541,8 @@ img {
 }
 
 .footer-title {
-  font-family: 'Roboto';
-  font-weight: 700;
+  /* font-family: 'Roboto'; */
+  /* font-weight: 700; */
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
@@ -574,12 +578,6 @@ img {
 .footer-socials-icon {
   fill: currentColor;
 }
-
-/* .footer-socials-link:hover,
-.footer-socials-link:focus {
-  background-color: var(--secondary-color);
-  color: var(--primary-bg-color);
-} */
 
 /* -------- Filters (Portfolio) --------- */
 
