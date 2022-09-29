@@ -28,7 +28,6 @@ h6 {
 ul {
   margin: 0;
   padding-left: 0;
-  list-style: none;
 }
 
 button {
@@ -39,7 +38,12 @@ img {
   display: block;
 }
 
+.list {
+  list-style: none;
+}
+
 .link {
+  display: block;
   text-decoration: none;
 }
 
@@ -71,10 +75,10 @@ img {
 }
 
 .page-cap {
-  padding-top: 24px;
-  padding-bottom: 24px;
-  display: flex;
-  background-color: var(--primary-bg-color);
+  /* padding-top: 24px; */
+  /* padding-bottom: 24px; */
+  /* display: flex; */
+  /* background-color: var(--primary-bg-color); */
   /* background-color: pink; temp color */
   border-bottom: 1px solid #ececec;
 }
@@ -102,7 +106,7 @@ img {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--secondary-color);
-  text-decoration: none;
+  /* text-decoration: none; */
 }
 
 /* top line: logo color (text Color) */
@@ -121,7 +125,13 @@ img {
   margin-left: 0;
 }
 
+.navigation-item {
+  /* padding-top: 32px; */
+  /* padding-bottom: 32px; */
+}
 .navigation-link {
+  padding-top: 32px;
+  padding-bottom: 32px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -145,6 +155,9 @@ img {
   margin-left: 0;
 }
 
+.current-page {
+  color: var(--secondary-color);
+}
 .contact-link {
   font-weight: 500;
   font-size: 14px;
@@ -184,6 +197,9 @@ img {
 }
 
 .hero-title {
+  max-width: 696px;
+  margin-right: auto;
+  margin-left: auto;
   margin-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
@@ -221,8 +237,8 @@ img {
 /* ------------ Advantages ------------- */
 
 .advantages {
-  /*background-color: aqua;  temp-color */
   padding-bottom: 0;
+  /* background-color: aqua;  temp-color */
 }
 
 .advantages-title {
@@ -231,15 +247,13 @@ img {
 
 .advantage-list {
   display: flex;
-  /* margin-top: 0; */
-  /* margin-bottom: 0; */
-  /* align-items: center; */
-  /* margin-left: auto; */
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .advantage-item {
-  display: flex;
-  flex-direction: column;
+  /* display: flex; */
+  /* flex-direction: column; */
   width: 270px;
   /* align-items: center; */
   /* margin-left: auto; */
@@ -281,9 +295,9 @@ img {
 
 /* ------------ Activities ------------- */
 
-.activities {
-  /*background-color: rgb(242, 245, 73);  temp-color */
-}
+/* .activities {
+  background-color: rgb(242, 245, 73);  temp-color
+} */
 
 .activities-title {
   margin-bottom: 50px;
@@ -295,16 +309,10 @@ img {
 
 .activity-list {
   display: flex;
-  /* align-items: center; */
-  /* margin-left: auto; */
 }
 
 .activity-item {
-  display: flex;
-  flex-direction: column;
   width: 370px;
-  /* align-items: center; */
-  /* margin-left: auto; */
 }
 
 .activity-item:not(:last-child) {
@@ -317,36 +325,29 @@ img {
 .team-members {
   margin-bottom: 0;
   background-color: var(--second-bg-color);
-  /* background-color: tan;  temp color */
+  /* background-color: tan;  temp-color */
 }
 
 .team-members-title {
   margin-bottom: 50px;
   font-size: 36px;
   line-height: 1.17;
-  /* or 117% or 42px */
   text-align: center;
   letter-spacing: 0.03em;
 }
 
 .team-list {
   display: flex;
-  /* align-items: center; */
-  /* margin-left: auto; */
 }
 
 .team-member {
-  display: flex;
-  flex-direction: column;
   width: 270px;
-  height: 428px;
   background-color: var(--primary-bg-color);
+  border-bottom: 1px solid var(--secondary-grey-color);
   opacity: 1;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  /* align-items: center; */
-  /* margin-left: auto; */
 }
 
 .team-member:not(:last-child) {
@@ -355,7 +356,12 @@ img {
 }
 
 .team-photo {
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
+}
+
+.team-wrap {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .team-title {
@@ -376,7 +382,8 @@ img {
   margin-bottom: 16px;
 }
 
-.team-wrapper .socials {
+/* .team-wrapper .socials */
+.socials {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -582,7 +589,7 @@ img {
 /* -------- Filters (Portfolio) --------- */
 
 .filters {
-  /* background-color: tan;  temp color */
+  /* background-color: tan;  temp-color */
 }
 
 .filter-list {
@@ -664,6 +671,7 @@ img {
 }
 
 .project-title {
+  color: var(--primary-text-color);
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
